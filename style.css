@@ -1,0 +1,167 @@
+/** font import **/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/** root styles **/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /** color palette **/
+  --pale-blue: hsl(225, 100%, 94%);
+  --vibrant-blue: hsl(245, 75%, 52%);
+  --cloud: hsl(225, 100%, 98%);
+  --steel-blue: hsl(224, 23%, 55%);
+  --navy: hsl(223, 47%, 23%);
+  --lilac: hsl(265, 52%, 65%);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/** order card styles **/
+.order-card {
+  background-color: #fff;
+  max-width: 350px;
+  border-radius: 15px;
+}
+
+.order-image {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/** order details styles **/
+.order-details {
+  padding: 1.3rem;
+}
+
+.order-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+.order-text {
+  font-size: 1rem;
+  color: var(--steel-blue);
+  line-height: 1.6;
+  padding: 1rem 1rem 0 1rem;
+}
+
+/** order plan styles **/
+
+.order-plan {
+  background-color: var(--cloud);
+  margin: 0 1rem;
+  padding: 1rem 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plan {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+.price {
+  font-size: 0.9rem;
+  color: var(--steel-blue);
+}
+
+.order-link {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--vibrant-blue);
+}
+
+.order-link:active {
+  color: var(--lilac);
+}
+
+/** button styles **/
+.btn {
+  display: block;
+  width: 80%;
+  margin: 1.3rem auto 0 auto;
+  background-color: var(--vibrant-blue);
+  color: var(--cloud);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--lilac);
+}
+
+.cancel {
+  display: inline-block;
+  color: var(--steel-blue);
+  font-weight: 900;
+  text-decoration: none;
+  margin: 1.5rem;
+}
+
+.cancel:active {
+  color: var(--navy);
+}
+
+/** media query **/
+
+@media (min-width: 375px) {
+  .container {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+
+  .order-card {
+    max-width: 500px;
+  }
+
+  .order-text {
+    font-size: 1.125rem;
+    color: var(--steel-blue);
+    line-height: 1.6;
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  .order-plan {
+    margin: 0 4rem;
+  }
+
+  .btn {
+    width: 80%;
+    padding: 0.7rem 1rem;
+    font-size: 0.975rem;
+  }
+
+  .cancel {
+    font-size: 0.95rem;
+    margin: 2.5rem;
+  }
+}
