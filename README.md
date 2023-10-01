@@ -6,7 +6,7 @@
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech used:** HTML, CSS
 
 - Utilized CSS Flexbox to ensure a responsive design.
 - Created a media query to display responsive for mobile devies.
